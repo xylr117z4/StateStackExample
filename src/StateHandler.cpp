@@ -37,7 +37,7 @@ bool StateHandler::pop(){
 	return false;
 }
 
-std::unique_ptr<BaseState>& StateHandler::top(){
+BaseState& StateHandler::top(){
 	return stateStack.top();
 }
 
