@@ -9,7 +9,7 @@ class StateHandler{
 		StateHandler();
 		bool push(int stateID);
 		bool pop();
-		std::unique_ptr<BaseState>& top();
+		BaseState& top();
 		bool empty();
 		bool clear();
 
